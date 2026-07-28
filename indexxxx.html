@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 2D Array Example</title>
+</head>
+<body>
+
+    <h2>Student Details Using 2D Array</h2>
+
+    <script>
+
+        // Creating a 2D Array
+        let students = [
+            [101, "Rama", "CSE", 85],
+            [102, "Rahul", "ECE", 90],
+            [103, "Sneha", "EEE", 88],
+            [104, "Priya", "CSE", 95]
+        ];
+
+       
+        function displayStudents(data) {
+
+            document.write("<h3>Student Details</h3>");
+
+            document.write("<table border='1' cellpadding='10'>");
+
+            document.write("<tr>");
+            document.write("<th>Roll No</th>");
+            document.write("<th>Name</th>");
+            document.write("<th>Branch</th>");
+            document.write("<th>Marks</th>");
+            document.write("</tr>");
+
+            
+            for (let i = 0; i < data.length; i++) {
+
+                document.write("<tr>");
+
+                // Inner loop for columns
+                for (let j = 0; j < data[i].length; j++) {
+
+                    document.write("<td>" + data[i][j] + "</td>");
+
+                }
+
+                document.write("</tr>");
+
+            }
+
+            document.write("</table>");
+
+        }
+
+        function totalMarks(data) {
+
+            let total = 0;
+
+            for (let i = 0; i < data.length; i++) {
+
+                total = total + data[i][3];
+
+            }
+
+            return total;
+
+        }
+        function averageMarks(data) {
+
+            return totalMarks(data) / data.length;
+
+        }
+
+        function highestMarks(data) {
+
+            let highest = data[0][3];
+
+            for (let i = 1; i < data.length; i++) {
+
+                if (data[i][3] > highest) {
+
+                    highest = data[i][3];
+
+                }
+
+            }
+
+            return highest;
+
+        }
+        document.write("<h3>Accessing Individual Elements:</h3>");
+        document.write("<br>");
+        document.write("first student name:"+students[0][1]);
+        document.write("<br>");
+        document.write("first student marks:"+students[0][3]);
+
+        displayStudents(students);
+
+        document.write("<br>");
+
+        document.write("<b>Total Marks : </b>" + totalMarks(students));
+
+        document.write("<br><br>");
+
+        document.write("<b>Average Marks : </b>" + averageMarks(students));
+
+        document.write("<br><br>");
+
+        document.write("<b>Highest Marks : </b>" + highestMarks(students));
+
+    </script>
+
+</body>
+</html>
