@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Canvas</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        canvas {
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>HTML5 Canvas</h2>
+
+    <!-- Canvas Area -->
+    <canvas id="myCanvas" width="500" height="300"></canvas>
+
+
+    <script>
+
+        // Get canvas
+        var c = document.getElementById("myCanvas");
+
+        // Get drawing tool
+        var ctx = c.getContext("2d");
+
+
+        // Draw Rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 60);
+
+
+        // Draw Circle
+        ctx.beginPath();
+        ctx.arc(200, 50, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+
+        // Draw Line
+        ctx.beginPath();
+        ctx.moveTo(280, 20);
+        ctx.lineTo(400, 100);
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+
+        // Display Name
+        ctx.font = "25px Arial";
+        ctx.fillStyle="black"
+        ctx.fillText("Rama Karri", 150, 200);
+
+
+    </script>
+
+</body>
+</html>
