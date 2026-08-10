@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebLearn Center</title>
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header>
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+            <td>
+                <h1>WebLearn Center</h1>
+            </td>
+            <td align="right">
+                <nav>
+                    <a href="#home">Home</a> &nbsp;|&nbsp;
+                    <a href="#articles">Articles</a> &nbsp;|&nbsp;
+                    <a href="#about">About</a> &nbsp;|&nbsp;
+                    <a href="#contact">Contact Us</a>
+                </nav>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<hr>
+
+<!-- Hero / Showcase Section -->
+<section id="home">
+    <center>
+        <h2>Building Web Pages with HTML</h2>
+        <p>
+            This webpage demonstrates how basic HTML elements can be
+            combined to create a clear and organized web page without
+            using CSS.
+        </p>
+        <p>
+            <a href="#articles">
+                <b>Explore Our Articles Below &darr;</b>
+            </a>
+        </p>
+    </center>
+</section>
+
+<hr>
+
+<!-- Main Content Layout using a Structural Table -->
+<table width="100%" border="0" cellspacing="0" cellpadding="20">
+    <tr valign="top">
+
+        <!-- Left Side: Main Content Column -->
+        <td width="70%">
+
+            <main id="articles">
+
+                <!-- First Article -->
+                <article>
+                    <h2>1. Introduction to HTML</h2>
+
+                    <p>Published: August 7, 2026</p>
+
+                    <p>
+                        HTML, or HyperText Markup Language, is used to
+                        create the basic structure of webpages.
+                        Elements such as
+                        <code>&lt;header&gt;</code>,
+                        <code>&lt;main&gt;</code>, and
+                        <code>&lt;footer&gt;</code>
+                        help organize different parts of a webpage.
+                    </p>
+
+                    <p>
+                        By using simple HTML elements, developers can
+                        create webpages that are easy to read,
+                        understand, and display in web browsers.
+                    </p>
+                </article>
+
+                <br>
+                <hr>
+                <br>
+
+                <!-- Second Article -->
+                <article>
+                    <h2>2. HTML Forms and User Input</h2>
+
+                    <p>Published: August 5, 2026</p>
+
+                    <p>
+                        HTML forms allow websites to collect information
+                        from users. Text fields, email fields, selection
+                        boxes, and text areas can be used to create
+                        simple and useful forms.
+                    </p>
+
+                    <h3>Interactive Contact Form</h3>
+
+                    <!-- Contact Form -->
+                    <form id="contact" action="#" method="post">
+
+                        <fieldset>
+
+                            <legend>
+                                <b>Contact Information</b>
+                            </legend>
+
+                            <p>
+                                <label for="name">
+                                    Full Name:
+                                </label>
+
+                                <input type="text"
+                                       id="name"
+                                       name="username"
+                                       required
+                                       placeholder="Enter your name">
+                            </p>
+
+                            <p>
+                                <label for="email">
+                                    Email Address:
+                                </label>
+
+                                <input type="email"
+                                       id="email"
+                                       name="useremail"
+                                       required
+                                       placeholder="Enter your email">
+                            </p>
+
+                            <p>
+                                <label for="topic">
+                                    Select Topic:
+                                </label>
+
+                                <select id="topic" name="usertopic">
+
+                                    <option value="general">
+                                        General Question
+                                    </option>
+
+                                    <option value="html">
+                                        HTML Learning
+                                    </option>
+
+                                    <option value="web">
+                                        Web Development
+                                    </option>
+
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="message">
+                                    Your Message:
+                                </label>
+
+                                <br>
+
+                                <textarea id="message"
+                                          name="usermessage"
+                                          rows="5"
+                                          cols="40"
+                                          placeholder="Enter your message here..."></textarea>
+                            </p>
+
+                            <p>
+                                <input type="submit"
+                                       value="Send Message">
+
+                                <input type="reset"
+                                       value="Clear Form">
+                            </p>
+
+                        </fieldset>
+
+                    </form>
+
+                </article>
+
+            </main>
+
+        </td>
+
+        <!-- Right Side: Sidebar Column -->
+        <td width="30%" bgcolor="#f4f4f4">
+
+            <aside id="about">
+
+                <h3>About WebLearn Center</h3>
+
+                <p>
+                    WebLearn Center provides simple information about
+                    HTML and web development for students and beginners.
+                </p>
+
+                <h4>Benefits of HTML:</h4>
+
+                <ul>
+                    <li>Easy to learn</li>
+                    <li>Simple webpage structure</li>
+                    <li>Fast page loading</li>
+                    <li>Works across different browsers</li>
+                </ul>
+
+                <h4>Basic Web Technologies:</h4>
+
+                <ol>
+                    <li>HTML for structure</li>
+                    <li>CSS for design</li>
+                    <li>JavaScript for interaction</li>
+                </ol>
+
+            </aside>
+
+        </td>
+
+    </tr>
+</table>
+
+<hr>
+
+<!-- Footer Section -->
+<footer>
+    <center>
+        <p>
+            &copy; 2026 WebLearn Center.
+            Created for learning HTML and web development.
+        </p>
+    </center>
+</footer>
+
+</body>
+</html>
+
+
