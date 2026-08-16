@@ -1,0 +1,73 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Student profile */
+.profile-card {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef5ff;
+    border-left: 5px solid #3366cc;
+}
+
+/* Profile heading */
+.profile-card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Profile details */
+.profile-card p {
+    font-size: 16px;
+    margin: 10px 0;
+}

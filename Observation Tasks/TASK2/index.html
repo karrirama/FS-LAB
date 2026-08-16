@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile Manager</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Profile Manager</h1>
+
+        <div class="input-section">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="rollNo">Roll Number</label>
+            <input type="text" id="rollNo" placeholder="Enter roll number">
+
+            <label for="department">Department</label>
+            <input type="text" id="department" placeholder="Enter department">
+
+            <label for="cgpa">CGPA</label>
+            <input type="number" id="cgpa" placeholder="Enter CGPA" step="0.01">
+
+            <button id="displayBtn">Display Student Profile</button>
+
+        </div>
+
+        <!-- Student profile will be created here dynamically -->
+        <div id="profileContainer"></div>
+
+    </div>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
